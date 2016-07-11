@@ -1,0 +1,49 @@
+{
+  "name": "Spoiled",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Has your life ever been completely ruined by a irresponsible mutual who can't tag their spoilers? Well -- here's the extension for you! With Spoiled, you can #blockt the h8rs and live a calm life knowing you can scroll down social media without going ham.",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/p.png",
+    "48": "icons/p2.png",
+	"128": "icons/p3.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "options_ui": {
+  "page": "src/options/index.html",
+  "chrome_style": true,
+  "open_in_tab": false
+ // "options_page": "src/options/index.html",
+  },
+  "browser_action": {
+    "default_icon": "icons/p.png",
+    "default_title": "Spoiled",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "contentSettings",
+    "contextMenus",
+    "history",
+	"storage",
+    "management",
+    "tabs",
+    "http://google.com/* http://tumblr.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
