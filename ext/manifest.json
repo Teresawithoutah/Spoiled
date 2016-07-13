@@ -10,22 +10,23 @@
 	"128": "icons/p3.png"
   },
   "default_locale": "en",
+  
   "background": {
-    "scripts": [
-      "src/bg/background.js"
-    ],
+    "scripts": ["src/bg/background.js"],
     "persistent": true
   },
+  
   "options_ui": {
   "page": "src/options/index.html",
   "chrome_style": true,
   "open_in_tab": false
- // "options_page": "src/options/index.html",
+ // "options_page": "src/options/index.html", OLD ASTRAL OPTIONS PAGE IN NEW TAB CODE
   },
   "browser_action": {
     "default_icon": "icons/p.png",
     "default_title": "Spoiled",
-    "default_popup": "src/browser_action/browser_action.html"
+ //SANSA POP UP WHEN EXTENSION IS CLICKED
+    "default_popup": "src/browser_action/popup.html"
   },
   "permissions": [
     "contentSettings",
@@ -42,7 +43,8 @@
         "https://www.google.com/*"
       ],
       "js": [
-        "src/inject/inject.js"
+        "src/inject/inject.js",
+		"src/bg/background.js"
       ]
     }
   ]
