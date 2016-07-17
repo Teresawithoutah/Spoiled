@@ -5,7 +5,7 @@
 const p = document.querySelector('p')
 var newHTML = p.innerHTML
 
-$(function() {
+$(function doIt() {
     $('#changeColor').click( function() {
        words.forEach(word=>
 		  newHTML = newHTML.replace(word, `<span class="color">${word}</span>`)
