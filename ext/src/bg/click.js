@@ -1,6 +1,7 @@
+//js script function for when button is clicked; basically code for changing color of certain words in array to RED
 
 
-     const words = ['mary', 'kill', 'bella']
+const words = ['mary', 'kill', 'bella']
 
 const p = document.querySelector('p')
 var newHTML = p.innerHTML
