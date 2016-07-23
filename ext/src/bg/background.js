@@ -4,17 +4,15 @@ if (document.title.indexOf("Google") != -1) {
 	//creates button
     var btn = document.createElement("BUTTON")
     var t = document.createTextNode("CLICK ME")
-	var e = document.createTextNode("fck me")
 	//creates text
 	var words = document.createElement("P")
     var r = document.createTextNode("alrighty go off");
     btn.appendChild(t);
+	words.appendChild(r);
     //Appending to DOM 
 	//adds button on page
     document.body.appendChild(btn);
 	//adds text one page
-	document.body.appendChild(e);
-	words.appendChild(r);
 	document.body.appendChild(words);
 }
 
