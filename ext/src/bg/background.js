@@ -16,12 +16,15 @@ if (document.title.indexOf("Google") != -1) {
 	  document.body.appendChild(words);
 }
 
+//checks if selected text is on page
 if (
   (
     document.documentElement.textContent || document.documentElement.innerText
   ).indexOf('fck me') > -1
+  //selected text ^
 ) {
    words.style.color =  "blue";
+ //changes selected text to blue
 }
 
 
