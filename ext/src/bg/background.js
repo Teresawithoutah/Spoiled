@@ -1,19 +1,19 @@
 // Checking page title
 if (document.title.indexOf("Google") != -1) {
     //Creating Elements
-	//creates button
+	  //creates button
     var btn = document.createElement("BUTTON")
     var t = document.createTextNode("CLICK ME")
-	//creates text
-	var words = document.createElement("P")
-    var r = document.createTextNode("alrighty go off");
+	  //creates text
+	  var words = document.createElement("P")
+    var r = document.createTextNode("fck me");
     btn.appendChild(t);
-	words.appendChild(r);
+	  words.appendChild(r);
     //Appending to DOM 
-	//adds button on page
+	  //adds button on page
     document.body.appendChild(btn);
-	//adds text one page
-	document.body.appendChild(words);
+	  //adds text one page
+	  document.body.appendChild(words);
 }
 
 if (
@@ -21,7 +21,7 @@ if (
     document.documentElement.textContent || document.documentElement.innerText
   ).indexOf('fck me') > -1
 ) {
-   console.log('yeah');
+   words.style.color =  "blue";
 }
 
 
