@@ -1,17 +1,14 @@
+// creates arrry
+var txt = ["yeah", "yip", "hmm","alright"];
+
 // Checking page title
 if (document.title.indexOf("Google") != -1) {
     //Creating Elements
-	  //creates button
-    var btn = document.createElement("BUTTON")
-    var t = document.createTextNode("CLICK ME")
 	  //creates text
 	  var words = document.createElement("P")
-    var r = document.createTextNode("fck me");
-    btn.appendChild(t);
+    var r = document.createTextNode(txt);
 	  words.appendChild(r);
     //Appending to DOM 
-	  //adds button on page
-    document.body.appendChild(btn);
 	  //adds text one page
 	  document.body.appendChild(words);
 }
@@ -20,7 +17,7 @@ if (document.title.indexOf("Google") != -1) {
 if (
   (
     document.documentElement.textContent || document.documentElement.innerText
-  ).indexOf('fck me') > -1
+  ).indexOf(txt) > -1
   //selected text ^
 ) {
    words.style.color =  "blue";
