@@ -1,19 +1,20 @@
 // creates array
-var txt = ["about", "app"];
+var spoiler = ["mary", "sister"];
 
 // Checking page title
 if (document.title.indexOf("Google") != -1) {
     //Creating Elements
+    var words = document.createElement("p");
     //creates text
-    var words = document.createElement("p")
-    var r = document.createTextNode(txt);
+    var r = document.createTextNode("i cant believe mary tried to kill her own sister, bella ! ");
     words.appendChild(r);
     //Appending to DOM 
     //adds text one page
     document.body.appendChild(words);
+    //changes color of text
+    var res  = words.replace(words, words.style.color = "purple");
+
 }
-//Color change          
-var res = txt.replace(words, words.style.color = "red");
 
 //Checks if selected text is on page
 if (
@@ -22,7 +23,7 @@ if (
   ).indexOf(txt) > -1
     //selected text ^
 ) {
-   document.body.appendChild(words);
+   document.body.appendChild(e);
     //follows code on line 16 & replaces words in array to selected color
 } else { 
     console.log("yeah");
