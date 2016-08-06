@@ -2,12 +2,16 @@
 if (document.title.indexOf("Twitter") != -1) {
 //Checks if selected text is on page
 if (document.documentElement.innerText.indexOf('enjoys') > -1) {
+   //if selected text is on page, replace this word (first index) with that word (second index)
     document.body.innerHTML = document.body.innerHTML.replace('terrible', 'hi');
+   //if selected text is on page, print this
     console.log("it works!");
 } else { 
+   // if selected text is not on page, print this
     console.log("selected text is not on page");
   }
 } else {
+  //if not on twitter print this
   console.log("title is not twitter");
 }
 
