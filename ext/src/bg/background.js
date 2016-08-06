@@ -1,30 +1,15 @@
-// creates array
-var spoiler = ["mary", "sister"];
-
 // Checking page title
 if (document.title.indexOf("Twitter") != -1) {
-    
-//FUCKING CODE FOR CHANGING SELECTED TEXT TO NEW TEXT
-document.body.innerHTML = document.body.innerHTML.replace('pasta',  'hi');
-
-
-}
- else{
-  console.log("it didnt work!!");
- }
-
 //Checks if selected text is on page
-if (
-  (
-    document.documentElement.textContent || document.documentElement.innerText
-  ).indexOf("body") > -1
-    //selected text ^
-) {
+if (document.documentElement.innerText.indexOf('enjoys') > -1) {
+    document.body.innerHTML = document.body.innerHTML.replace('terrible', 'hi');
     console.log("it works!");
-    //follows code on line 16 & replaces words in array to selected color
 } else { 
-    console.log("yeah");
+    console.log("selected text is not on page");
   }
+} else {
+  console.log("title is not twitter");
+}
 
 
 /* Creating Elements
