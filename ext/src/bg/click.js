@@ -1,7 +1,7 @@
 //js script function for when button is clicked; basically code for changing color of certain words in array to RED
 
 
-const words = ['mary', 'kill', 'bella']
+/*const words = ['mary', 'kill', 'bella']
 
 const p = document.querySelector('p')
 var newHTML = p.innerHTML
@@ -19,4 +19,10 @@ $(function doIt() {
     });
 });
 
-
+*/
+function givemecolor(thecolor,thetext)
+    {
+    return '<span style="color:'+thecolor+'>'+thetext+'</span>';
+    }
+document.write(givemecolor('green','I\'m an apple'));
+document.write(givemecolor('yellow','and I\'m a banana'));

@@ -19,12 +19,8 @@
  
   "content_scripts": [
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-		"src/bg/background.js"
-      ]
+      "matches": ["http://twitter.com/*","https://twitter.com/*"],
+      "js": ["src/bg/background.js"]
     }
   ]
 }
