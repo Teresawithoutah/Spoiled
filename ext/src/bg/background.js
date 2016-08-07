@@ -1,9 +1,24 @@
+var spoiled = ["terrible", "but", "pasta"];
+
+var result = spoiled.every(function(word) {
+    return document.documentElement.innerText.indexOf(word) > -1;
+});
+
 // Checking page title
 if (document.title.indexOf("Twitter") != -1) {
+
+if (result) { 
+
+console.log("exists")
+
+} else{
+console.log("not exist");
+}// all exists }
+}
 //Checks if selected text is on page
-if (document.documentElement.innerText.indexOf('enjoys') > -1) {
+/*if (document.documentElement.innerText.indexOf('enjoys') > -1) {
    //if selected text is on page, replace this word (first index) with that word (second index)
-    document.body.innerHTML = document.body.innerHTML.replace('terrible', 'hi');
+    document.body.innerHTML = document.body.innerHTML.replace('steps', 'hi');
    //if selected text is on page, print this
     console.log("it works!");
 } else { 
