@@ -11,18 +11,16 @@ if (document.title.indexOf("Tumblr") != -1) {
 for (var i = 0; i < aTags.length; i++) {
   if (aTags[i].textContent == searchText) {
     found = aTags[i];
-  //stop once found
-// not sure how this will function when its a constant feed
-    break;
+  //if spoilers found 
+  found.style.background = "red";
   }
 }
-// if spoilers are on page
 
+// if spoilers are on page
 if (found) {
   //print the source class name containing the spoilers
     console.log("spoiler exists!!")
     console.log(found);
-    found.style.background = "red";
 }
 else {
   //if text is not in a div print this
