@@ -16,11 +16,13 @@ for (var i = 0; i < aTags.length; i++) {
     break;
   }
 }
+// if spoilers are on page
 
 if (found) {
-  //print the source class name
+  //print the source class name containing the spoilers
     console.log("spoiler exists!!")
     console.log(found);
+    found.style.background = "red";
 }
 else {
   //if text is not in a div print this
