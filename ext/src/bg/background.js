@@ -1,20 +1,31 @@
-//array with all the censor words 
-var spoiled = ["terrible", "but", "pasta"];
-
-//checks through every word of array and page
-var result = spoiled.every(function(word) {
-    return document.documentElement.innerText.indexOf(word) > -1;
-});
+//search these elements
+var aTags = document.getElementsByTagName("div");
+//search for this word in those elements
+var searchText = "women";
+var found;
 
 // Checking page title
-if (document.title.indexOf("Twitter") != -1) {
+if (document.title.indexOf("Tumblr") != -1) {
 
-//checks if every word of array is on page
-if (result) { 
-//if so do this
-console.log("exists")
-
-} else{
-console.log("not exist");
+//increments for page
+for (var i = 0; i < aTags.length; i++) {
+  if (aTags[i].textContent == searchText) {
+    found = aTags[i];
+  //stop once found
+// not sure how this will function when its a constant feed
+    break;
+  }
 }
+
+if (found) {
+  //print the source class name
+    console.log("spoiler exists!!")
+    console.log(found);
+}
+else {
+  //if text is not in a div print this
+    console.log("failure");
+}
+} else{
+console.log("you're not on tumblr");
 }

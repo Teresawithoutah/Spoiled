@@ -19,7 +19,7 @@
  
   "content_scripts": [
     {
-      "matches": ["http://twitter.com/*","https://twitter.com/*"],
+      "matches": ["http://www.tumblr.com/*","https://www.tumblr.com/*"],
       "js": ["src/bg/background.js"]
     }
   ]
