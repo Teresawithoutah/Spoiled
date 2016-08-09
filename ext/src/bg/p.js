@@ -1,0 +1,1 @@
+$('div:contains("Olympics")').css('background-color', 'red');
