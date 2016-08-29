@@ -19,8 +19,9 @@
  
   "content_scripts": [
     {
-      "matches": ["http://www.tumblr.com/*","https://www.tumblr.com/*"],
-      "js": ["src/bg/background.js"]
+      "js": ["src/bg/jquery.min.js","src/bg/background.js"],
+      "matches": ["http://www.tumblr.com/*","https://www.tumblr.com/*"]
+  
     }
   ]
 }
