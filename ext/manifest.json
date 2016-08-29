@@ -3,25 +3,39 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Has your life ever been completely ruined by a irresponsible mutual who can't tag their spoilers? Well -- here's the extension for you! With Spoiled, you can #blockt the h8rs and live a calm life knowing you can scroll down social media without going ham.",
- // THIS IS WHERE OUR SPOILED.TECH WEB WOULD GO "homepage_url": "http://extensionizr.com",
+ // THIS IS WHERE OUR SPOILED.TECH WEB WOULD GO 
+ //"homepage_url": "http://extensionizr.com",
+  
+ //THIS ALLOWS THE ICON TO BE ACTIVE ON TOOLBAR 
+  "browser_action": {
+    "name": "Manipulate DOM"
+  },
+
+ //ICONS
   "icons": {
     "16": "icons/p.png",
     "48": "icons/p2.png",
 	"128": "icons/p3.png"
   },
   "default_locale": "en",
+
+//SETTINGS PAGE
   "options_ui": {
-  "page": "src/options/index.html",
   "chrome_style": true,
   "open_in_tab": false
  // "options_page": "src/options/index.html", OLD ASTRAL OPTIONS PAGE IN NEW TAB CODE
   },
- 
+
+  "background": {
+      "page": "background.html"
+  },
+  
   "content_scripts": [
     {
-      "js": ["src/bg/jquery.min.js","src/bg/background.js"],
+      "js": ["jquery-3.1.0.min.js","running.js"],
       "matches": ["http://www.tumblr.com/*","https://www.tumblr.com/*"]
   
     }
   ]
+
 }
