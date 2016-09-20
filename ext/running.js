@@ -14,15 +14,15 @@ var found = spoilers.every(function(word) {
 
 //if exists print this
 if (found) { 
-console.log("spoilers found");
-$("p:contains('" + spoilers + "')").css("background-color", "yellow");
-} 
 
 
+for (var i = 0; i <spoilers.length; i++) {
+    $(".p:contains('"+spoilers[i]+"')").each(function() {
+       console.log("yeah");
+    });
 
-
-
-
+}
+}
 
 }else{
 	console.log("ur not on tumblr");
