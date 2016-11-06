@@ -8,7 +8,8 @@
   
  //THIS ALLOWS THE ICON TO BE ACTIVE ON TOOLBAR 
   "browser_action": {
-    "name": "Manipulate DOM"
+    "name": "Manipulate DOM",
+    "default_popup": "popup.html"
   },
 
  //ICONS
