@@ -1,4 +1,4 @@
-onsole.log("ur on tumblr");
+console.log("ur on tumblr");
 
 const words = ['mary', 'kill', 'bella']
 

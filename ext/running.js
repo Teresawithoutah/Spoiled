@@ -2,6 +2,7 @@
 var spoilers = ["today", "day", "run"];
 
 
+
 // Checking page title
 if (document.title.indexOf("Tumblr") != -1) {
 //if on tumblr print this
@@ -14,14 +15,13 @@ var found = spoilers.every(function(word) {
 
 //if exists print this
 if (found) { 
+	//ARRAY OF CENSOR WORDS
+var spoilers = ["today", "day", "run"];
+ 
+console.log("spoilers found");
+$("p:contains("+$spoilers+")").css("background-color", "yellow");
+ 
 
-
-for (var i = 0; i <spoilers.length; i++) {
-    $(".p:contains('"+spoilers[i]+"')").each(function() {
-       console.log("yeah");
-    });
-
-}
 }
 
 }else{
